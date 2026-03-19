@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.neurocrece.com/">
+<meta property="og:title" content="NeuroCrece | Neuroeducación Infantil Especializada">
+<meta property="og:description" content="Transformamos desafíos en capacidades. Especialistas en TDAH, Dislexia y Neurodesarrollo con ciencia aplicada.">
+<meta property="og:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.neurocrece.com/">
+<meta name="twitter:title" content="NeuroCrece | Neuroeducación Infantil">
+<meta name="twitter:description" content="Estrategias basadas en neurociencia para el éxito escolar y emocional de tus hijos.">
+<meta name="twitter:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Contacto | NeuroCrece</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --p: #1A3A5F; --s: #4A90E2; --a: #FF8C00; --w: #ffffff; --bg: #F4F7F6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; }
+        
+        header { background: var(--w); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Montserrat'; font-size: 1.6rem; text-decoration: none; color: var(--p); }
+        .logo span { color: var(--a); }
+        nav a { text-decoration: none; color: var(--p); margin-left: 1.5rem; font-weight: 600; font-size: 0.9rem; }
+
+        .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; padding: 60px 8%; max-width: 1200px; margin: 0 auto; }
+        
+        .contact-info h1 { font-family: 'Montserrat'; color: var(--p); font-size: 2.5rem; margin-bottom: 20px; }
+        .info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
+        .info-icon { background: var(--s); color: var(--w); width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        
+        .contact-form { background: var(--w); padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .form-control { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
+        .btn-submit { background: var(--a); color: var(--w); border: none; padding: 15px 30px; border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%; transition: 0.3s; }
+        .btn-submit:hover { background: #e67e00; transform: translateY(-3px); }
+
+        .map-placeholder { width: 100%; height: 300px; background: #eee; border-radius: 20px; margin-top: 30px; display: flex; align-items: center; justify-content: center; color: #999; border: 1px solid #ddd; }
+
+        footer { background: var(--p); color: var(--w); text-align: center; padding: 2rem; margin-top: 40px; }
+        
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 1.5rem; }
+            nav { margin-top: 1rem; }
+            nav a { margin: 0 8px; font-size: 0.8rem; }
+            .btn-outline { margin-left: 0; margin-top: 10px; width: 100%; }
+            .btn-a { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Neuro<span>Crece</span></a>
+        <nav>
+            <a href="metodologia.html">Metodología</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">E-books</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contact-wrapper">
+        <div class="contact-info">
+            <h1>Estamos aquí para <span>ayudarte</span></h1>
+            <p style="margin-bottom: 40px;">¿Tienes dudas sobre el neurodesarrollo de tu hijo? Escríbenos y nuestro equipo te responderá en menos de 24 horas.</p>
+            
+            <div class="info-item">
+                <div class="info-icon">✉</div>
+                <div><strong>Email:</strong><br>hola@neurocrece.com</div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">📱</div>
+                <div><strong>WhatsApp:</strong><br>+34 600 000 000</div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div><strong>Ubicación:</strong><br>Atención Online y Presencial (Madrid)</div>
+            </div>
+
+            <div class="map-placeholder">
+                [ Aquí puedes integrar Google Maps ]
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#">
+                <label>Nombre y Apellidos</label>
+                <input type="text" class="form-control" placeholder="Tu nombre..." required>
+                
+                <label>Email de contacto</label>
+                <input type="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                
+                <label>Asunto</label>
+                <select class="form-control">
+                    <option>Consulta de evaluación</option>
+                    <option>Información sobre E-books</option>
+                    <option>Cita previa</option>
+                    <option>Otro motivo</option>
+                </select>
+                
+                <label>Tu mensaje</label>
+                <textarea class="form-control" rows="5" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2026 NeuroCrece - Conectando con el potencial infantil</p></footer>
+</body>
+</html>

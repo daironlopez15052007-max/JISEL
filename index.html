@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuroCrece: Centro especializado en neuroeducación infantil. TDAH, Dislexia y apoyo al neurodesarrollo mediante ciencia aplicada.">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.neurocrece.com/">
+<meta property="og:title" content="NeuroCrece | Neuroeducación Infantil Especializada">
+<meta property="og:description" content="Transformamos desafíos en capacidades. Especialistas en TDAH, Dislexia y Neurodesarrollo con ciencia aplicada.">
+<meta property="og:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.neurocrece.com/">
+<meta name="twitter:title" content="NeuroCrece | Neuroeducación Infantil">
+<meta name="twitter:description" content="Estrategias basadas en neurociencia para el éxito escolar y emocional de tus hijos.">
+<meta name="twitter:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+    <title>NeuroCrece | Home - Neuroeducación Infantil Especializada</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { 
+            --p: #1A3A5F; --s: #4A90E2; --a: #FF8C00; --w: #ffffff; 
+            --bg: #F4F7F6; --txt: #333; --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--txt); line-height: 1.6; }
+
+        /* --- Navegación --- */
+        header { 
+            background: var(--w); padding: 1rem 8%; display: flex; 
+            justify-content: space-between; align-items: center; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; 
+        }
+        .logo { font-family: 'Montserrat'; font-size: 1.6rem; text-decoration: none; color: var(--p); }
+        .logo span { color: var(--a); }
+        
+        nav a { 
+            text-decoration: none; color: var(--p); margin-left: 1.5rem; 
+            font-weight: 600; font-size: 0.9rem; transition: var(--transition);
+        }
+        nav a:hover, nav a.active { color: var(--a); }
+
+        /* --- Hero --- */
+        .hero { 
+            padding: 140px 8% 120px; text-align: center; 
+            background: linear-gradient(rgba(26,58,95,0.85), rgba(26,58,95,0.85)), 
+                        url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000') center/cover; 
+            color: var(--w); 
+        }
+        .hero h1 { font-family: 'Montserrat'; font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem; opacity: 0.9; }
+
+        /* --- Botones --- */
+        .btn { 
+            padding: 15px 40px; border-radius: 50px; text-decoration: none; 
+            display: inline-block; font-weight: 600; transition: var(--transition); border: none;
+        }
+        .btn-a { background: var(--a); color: var(--w); box-shadow: 0 4px 15px rgba(255,140,0,0.3); }
+        .btn-a:hover { background: #e67e00; transform: translateY(-3px); }
+        .btn-outline { border: 2px solid var(--w); color: var(--w); margin-left: 15px; }
+        .btn-outline:hover { background: var(--w); color: var(--p); }
+
+        /* --- Secciones --- */
+        section { padding: 90px 8%; }
+        .section-title { text-align: center; font-family: 'Montserrat'; color: var(--p); font-size: 2.2rem; margin-bottom: 4rem; }
+        .section-title span { color: var(--a); }
+
+        /* --- Grid de Características --- */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        .f-card { 
+            background: var(--w); padding: 45px 30px; border-radius: 20px; 
+            text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: var(--transition);
+        }
+        .f-card:hover { transform: translateY(-10px); border-bottom: 5px solid var(--a); }
+        .f-card h3 { font-family: 'Montserrat'; color: var(--p); margin-bottom: 1rem; }
+
+        /* --- Sección E-books Preview --- */
+        .ebook-preview { background: #fff; }
+        .preview-grid { display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; }
+        .preview-content { flex: 1; min-width: 300px; }
+        .preview-image { flex: 1; min-width: 300px; text-align: center; }
+        .preview-image img { max-width: 80%; border-radius: 15px; box-shadow: 20px 20px 0 var(--s); }
+
+        /* --- Testimonios Cortos --- */
+        .testimonials { background: var(--p); color: var(--w); text-align: center; }
+        .t-box { max-width: 800px; margin: 0 auto; font-size: 1.4rem; font-style: italic; }
+        .t-author { display: block; margin-top: 20px; font-size: 1rem; font-weight: 600; color: var(--a); font-style: normal; }
+
+        /* --- Footer --- */
+        footer { background: #11263d; color: var(--w); text-align: center; padding: 4rem 8% 2rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem; text-align: left; }
+        .footer-col h4 { font-family: 'Montserrat'; margin-bottom: 1.5rem; color: var(--a); }
+        .footer-col a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; transition: 0.3s; }
+        .footer-col a:hover { color: var(--w); padding-left: 5px; }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 1.5rem; }
+            nav { margin-top: 1rem; }
+            nav a { margin: 0 8px; font-size: 0.8rem; }
+            .btn-outline { margin-left: 0; margin-top: 10px; width: 100%; }
+            .btn-a { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Neuro<span>Crece</span></a>
+        <nav>
+            <a href="metodologia.html">Metodología</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">E-books</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Construyendo mentes brillantes y felices.</h1>
+        <p>Acompañamos el neurodesarrollo de tus hijos con estrategias basadas en la neurociencia y un enfoque profundamente humano.</p>
+        <div class="hero-btns">
+            <a href="servicios.html" class="btn btn-a">Nuestros Servicios</a>
+            <a href="metodologia.html" class="btn btn-outline">¿Cómo trabajamos?</a>
+        </div>
+    </section>
+
+    <section id="pilares">
+        <h2 class="section-title">El camino al <span>éxito escolar</span></h2>
+        <div class="features">
+            <div class="f-card">
+                <h3>Neurodiversidad</h3>
+                <p>Entendemos que cada cerebro es único. Adaptamos nuestras herramientas al perfil de cada niño.</p>
+            </div>
+            <div class="f-card">
+                <h3>Evidencia Científica</h3>
+                <p>Nuestra metodología se actualiza constantemente con los últimos hallazgos en psicología cognitiva.</p>
+            </div>
+            <div class="f-card">
+                <h3>Familia y Escuela</h3>
+                <p>Trabajamos de forma sistémica, involucrando a padres y profesores para un cambio real.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ebook-preview">
+        <div class="preview-grid">
+            <div class="preview-image">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600" alt="Ebook NeuroCrece">
+            </div>
+            <div class="preview-content">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Recursos para <span>llevar a casa</span></h2>
+                <p>Hemos sintetizado años de experiencia en guías prácticas y cuadernos de ejercicios descargables para que puedas empezar a trabajar hoy mismo.</p>
+                <br>
+                <p>• Estrategias para TDAH y Dislexia.<br>• Juegos de estimulación cognitiva.<br>• Guías de gestión emocional.</p>
+                <br>
+                <a href="tienda.html" class="btn btn-a">Explorar E-books</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="t-box">
+            "NeuroCrece no solo ayudó a mi hija con su lectura, nos dio a nosotros como padres la tranquilidad de entender cómo funciona su cerebro."
+            <span class="t-author">— Elena R., Madre de familia</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color:#fff">Neuro<span>Crece</span></a>
+                <p style="margin-top:15px; font-size: 0.9rem; color: #ccc;">Transformando el aprendizaje a través de la ciencia y el corazón.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <a href="metodologia.html">Nuestra Metodología</a>
+                <a href="servicios.html">Servicios Clínicos</a>
+                <a href="tienda.html">Tienda de Recursos</a>
+                <a href="contacto.html">Solicitar Cita</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #224466; padding-top: 20px; font-size: 0.8rem; color: #778899;">
+            &copy; 2026 NeuroCrece - 3Web Designer Elite. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

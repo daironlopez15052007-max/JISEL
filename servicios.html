@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.neurocrece.com/">
+<meta property="og:title" content="NeuroCrece | Neuroeducación Infantil Especializada">
+<meta property="og:description" content="Transformamos desafíos en capacidades. Especialistas en TDAH, Dislexia y Neurodesarrollo con ciencia aplicada.">
+<meta property="og:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.neurocrece.com/">
+<meta name="twitter:title" content="NeuroCrece | Neuroeducación Infantil">
+<meta name="twitter:description" content="Estrategias basadas en neurociencia para el éxito escolar y emocional de tus hijos.">
+<meta name="twitter:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Servicios | NeuroCrece - Intervención Especializada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --p: #1A3A5F; --s: #4A90E2; --a: #FF8C00; --w: #ffffff; --bg: #F4F7F6; --txt: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--txt); line-height: 1.6; }
+        
+        /* Header idéntico al index */
+        header { background: var(--w); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Montserrat'; font-size: 1.6rem; text-decoration: none; color: var(--p); }
+        .logo span { color: var(--a); }
+        nav a { text-decoration: none; color: var(--p); margin-left: 1.5rem; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--a); }
+
+        .page-header { background: var(--p); color: var(--w); padding: 60px 8%; text-align: center; }
+        .page-header h1 { font-family: 'Montserrat'; font-size: 2.5rem; }
+
+        .service-row { display: flex; align-items: center; gap: 4rem; padding: 60px 8%; flex-wrap: wrap; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; background: #fff; }
+        
+        .service-img { flex: 1; min-width: 300px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .service-img img { width: 100%; height: auto; display: block; }
+        
+        .service-info { flex: 1.2; min-width: 300px; }
+        .service-info h2 { font-family: 'Montserrat'; color: var(--p); margin-bottom: 1.5rem; font-size: 2rem; }
+        .service-info ul { list-style: none; margin: 1.5rem 0; }
+        .service-info ul li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .service-info ul li::before { content: '✓'; position: absolute; left: 0; color: var(--a); font-weight: bold; }
+
+        .cta-box { background: var(--s); color: var(--w); text-align: center; padding: 50px 8%; margin-top: 40px; }
+        .btn { padding: 14px 35px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: 600; transition: 0.3s; border: none; cursor: pointer; background: var(--a); color: var(--w); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+        footer { background: var(--p); color: var(--w); text-align: center; padding: 3rem 8%; }
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 1.5rem; }
+            nav { margin-top: 1rem; }
+            nav a { margin: 0 8px; font-size: 0.8rem; }
+            .btn-outline { margin-left: 0; margin-top: 10px; width: 100%; }
+            .btn-a { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Neuro<span>Crece</span></a>
+        <nav>
+            <a href="index.html#metodologia">Metodología</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">E-books</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Nuestros Servicios Especializados</h1>
+        <p>Acompañamiento profesional basado en evidencia científica.</p>
+    </div>
+
+    <section class="service-row">
+        <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=800" alt="Evaluación Neuropsicológica">
+        </div>
+        <div class="service-info">
+            <h2>Evaluación y Diagnóstico</h2>
+            <p>Identificamos las fortalezas y áreas de oportunidad en el desarrollo cognitivo de niños y adolescentes.</p>
+            <ul>
+                <li>Detección temprana de TDAH y Dislexia.</li>
+                <li>Perfil neuropsicológico completo.</li>
+                <li>Informe detallado con pautas escolares.</li>
+            </ul>
+            <a href="index.html#contacto" class="btn">Solicitar Información</a>
+        </div>
+    </section>
+
+    <section class="service-row">
+        <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800" alt="Terapia Online">
+        </div>
+        <div class="service-info">
+            <h2>Intervención Cognitiva Online</h2>
+            <p>Sesiones personalizadas desde la comodidad de tu hogar, enfocadas en mejorar funciones ejecutivas.</p>
+            <ul>
+                <li>Estimulación de la memoria y atención.</li>
+                <li>Entrenamiento en lectoescritura.</li>
+                <li>Terapia 100% adaptada al ritmo del niño.</li>
+            </ul>
+            <a href="index.html#contacto" class="btn">Ver Disponibilidad</a>
+        </div>
+    </section>
+
+    <div class="cta-box">
+        <h3>¿No estás seguro de qué servicio necesitas?</h3>
+        <p style="margin-bottom: 20px;">Agenda una sesión de orientación gratuita de 15 minutos.</p>
+        <a href="#" class="btn" style="background: var(--p);">Reservar Orientación</a>
+    </div>
+
+    <footer><p>&copy; 2026 NeuroCrece - Especialistas en Neurodesarrollo</p></footer>
+</body>
+</html>

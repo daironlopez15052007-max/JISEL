@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.neurocrece.com/">
+<meta property="og:title" content="NeuroCrece | Neuroeducación Infantil Especializada">
+<meta property="og:description" content="Transformamos desafíos en capacidades. Especialistas en TDAH, Dislexia y Neurodesarrollo con ciencia aplicada.">
+<meta property="og:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.neurocrece.com/">
+<meta name="twitter:title" content="NeuroCrece | Neuroeducación Infantil">
+<meta name="twitter:description" content="Estrategias basadas en neurociencia para el éxito escolar y emocional de tus hijos.">
+<meta name="twitter:image" content="https://www.neurocrece.com/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+    <title>E-books y Recursos | NeuroCrece</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --p: #1A3A5F; --s: #4A90E2; --a: #FF8C00; --w: #ffffff; --bg: #F4F7F6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; }
+        
+        header { background: var(--w); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Montserrat'; font-size: 1.6rem; text-decoration: none; color: var(--p); }
+        .logo span { color: var(--a); }
+        nav a { text-decoration: none; color: var(--p); margin-left: 1.5rem; font-weight: 600; font-size: 0.9rem; }
+
+        .shop-header { padding: 60px 8%; text-align: center; }
+        .shop-header h1 { font-family: 'Montserrat'; color: var(--p); font-size: 2.5rem; margin-bottom: 10px; }
+
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; padding: 0 8% 60px; }
+        .book-card { background: var(--w); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; }
+        .book-card:hover { transform: translateY(-10px); }
+        
+        .book-cover { height: 350px; background: #e0e0e0; display: flex; align-items: center; justify-content: center; position: relative; }
+        .book-cover img { width: 100%; height: 100%; object-fit: cover; }
+        .badge { position: absolute; top: 15px; left: 15px; background: var(--a); color: var(--w); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+        .book-info { padding: 25px; text-align: center; }
+        .book-info h3 { font-family: 'Montserrat'; color: var(--p); margin-bottom: 10px; font-size: 1.2rem; }
+        .price { font-size: 1.5rem; color: var(--s); font-weight: 700; margin-bottom: 20px; display: block; }
+        
+        .btn-buy { width: 100%; background: var(--p); color: var(--w); padding: 12px; text-decoration: none; display: block; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+        .btn-buy:hover { background: var(--s); }
+
+        footer { background: var(--p); color: var(--w); text-align: center; padding: 3rem 8%; }
+        
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 1.5rem; }
+            nav { margin-top: 1rem; }
+            nav a { margin: 0 8px; font-size: 0.8rem; }
+            .btn-outline { margin-left: 0; margin-top: 10px; width: 100%; }
+            .btn-a { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Neuro<span>Crece</span></a>
+        <nav>
+            <a href="index.html#metodologia">Metodología</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="tienda.html">E-books</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="shop-header">
+        <h1>Recursos Digitales</h1>
+        <p>Herramientas prácticas para padres y educadores diseñadas por expertos.</p>
+    </div>
+
+    <section class="products-grid">
+        <div class="book-card">
+            <div class="book-cover">
+                <div class="badge">Más vendido</div>
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=800" alt="Guía TDAH">
+            </div>
+            <div class="book-info">
+                <h3>Guía Práctica: TDAH en el Aula</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Estrategias efectivas para mejorar la atención y conducta.</p>
+                <span class="price">19.99€</span>
+                <a href="#" class="btn-buy">Comprar ahora</a>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=800" alt="Lectoescritura">
+            </div>
+            <div class="book-info">
+                <h3>Venciendo la Dislexia</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Cuaderno de ejercicios para fortalecer la conciencia fonológica.</p>
+                <span class="price">24.50€</span>
+                <a href="#" class="btn-buy">Comprar ahora</a>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <div class="badge">Gratis</div>
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800" alt="Neuroeducación">
+            </div>
+            <div class="book-info">
+                <h3>Mitos de la Neuroeducación</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Descubre qué dice la ciencia sobre el aprendizaje real.</p>
+                <span class="price" style="color: var(--a);">0.00€</span>
+                <a href="#" class="btn-buy" style="background: var(--a);">Descargar Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2026 NeuroCrece - Recursos para el Futuro</p></footer>
+</body>
+</html>
